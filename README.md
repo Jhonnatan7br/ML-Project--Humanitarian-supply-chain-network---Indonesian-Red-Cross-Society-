@@ -56,15 +56,16 @@ PMI now wants to use this simulated dataset (containing 12,000 simulated scenari
 For predicting the final readiness value in advance, up to 10 days after the start of a humanitarian crisis.
   - Information you can use: the policies, total demand, initial inventory, and the first 10 days demand coverage curve
   - Expected prediction: the readiness.
-Feedforward neural networks, convolutional neural networks (CNNs), or recurrent neural networks (RNNs) like Long Short-Term Memory (LSTM) networks or Gated Recurrent Units (GRUs). @Andre Kedge & @Mona Laraki 
-URL: https://colab.research.google.com/drive/1hNhgtGZqFN0LysL-ZFstCUardq7FtKn5?usp=sharing 
+  - Feedforward neural networks, convolutional neural networks (CNNs), or recurrent neural networks (RNNs) like Long Short-Term Memory (LSTM) networks or Gated     
+  Recurrent Units (GRUs). @Andre Kedge & @Mona Laraki 
+  - URL: https://colab.research.google.com/drive/1hNhgtGZqFN0LysL-ZFstCUardq7FtKn5?usp=sharing 
 
 ### Model 2 demand coverage
 For predicting subsequent demand coverage curve, up to 10 days after the start of a humanitarian crisis.
   - Information you can use: the policies, total demand, initial inventory, and the first 10 days demand coverage curve
   - Expected prediction: the demand coverage curve after the first 10 days, from the 11th day to the end of the crisis (the 24th day).
-Deep learning architecture for time-series forecasting. Options may include recurrent neural networks (RNNs) like Long Short-Term Memory (LSTM) networks or Gated Recurrent Units (GRUs), or more @Cristian Medina - Data Analytics  & @Mélanie Kedge 
-URL: https://colab.research.google.com/drive/1o9TKLApndriNatjOt9NEB_EKoJW67mvK?usp=sharing 
+  - Deep learning architecture for time-series forecasting. Options may include recurrent neural networks (RNNs) like Long Short-Term Memory (LSTM) networks or Gated   Recurrent Units (GRUs), or more @Cristian Medina - Data Analytics  & @Mélanie Kedge 
+  - URL: https://colab.research.google.com/drive/1o9TKLApndriNatjOt9NEB_EKoJW67mvK?usp=sharing 
 
 ### Extra
 Models that require a shorter wait time after the start of the crisis? For example, waiting only 5 days instead of 10 days to get the prediction
