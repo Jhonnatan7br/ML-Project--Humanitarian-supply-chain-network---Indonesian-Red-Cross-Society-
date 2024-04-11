@@ -4,27 +4,19 @@ This project aims to help the Indonesian Red Cross Society (Palang Merah Indones
 
 ### Dataset Overview
 
-Sourcing: This feature likely represents the process of sourcing or acquiring goods from suppliers.
-
-Transport: Indicates the transportation activities, possibly related to moving goods between different locations such as warehouses or distribution centers.
-
-Replenishment: This feature may represent the replenishment activities, which involve restocking inventory to maintain desired levels.
-
-Distribution: Likely represents the distribution process, which involves delivering goods to customers or other points of sale.
-
-Total demand: The total demand for the product or products being managed. This could be the sum of demand from various sources or regions.
-
-Initial RW Inv: Initial inventory level of a certain type (could be raw materials).
-
-Initial PW Inv: Initial inventory level of another type (possibly work-in-progress inventory).
-
-Initial DW Inv Total: Initial inventory level of finished goods inventory.
-
-Initial DW Inv 0-19: These features seem to represent the initial inventory levels of finished goods across different time periods or categories.
-
-Demand coverage after X hours: These features likely represent the percentage of demand that can be covered after certain time intervals. This could be an indicator of the efficiency of the supply chain in meeting demand over time.
-
-Readiness (%): This feature might represent the readiness of the supply chain or inventory system, possibly indicating how prepared it is to meet demand
+| Feature                  | Description                                                                                           |
+|--------------------------|-------------------------------------------------------------------------------------------------------|
+| Sourcing                 | Likely represents the process of sourcing or acquiring goods from suppliers.                          |
+| Transport                | Indicates the transportation activities, possibly related to moving goods between different locations.|
+| Replenishment            | Represents the replenishment activities, involving restocking inventory to maintain desired levels.   |
+| Distribution             | Likely represents the distribution process, involving delivering goods to customers or points of sale.|
+| Total demand             | The total demand for the product or products being managed.                                           |
+| Initial RW Inv           | Initial inventory level of a certain type (could be raw materials).                                   |
+| Initial PW Inv           | Initial inventory level of another type (possibly work-in-progress inventory).                         |
+| Initial DW Inv Total     | Initial inventory level of finished goods inventory.                                                  |
+| Initial DW Inv 0-19      | Represents the initial inventory levels of finished goods across different time periods or categories.|
+| Demand coverage after X hours | Likely represents the percentage of demand that can be covered after certain time intervals.         |
+| Readiness (%)            | Represents the readiness of the supply chain or inventory system, indicating how prepared it is to meet demand. |
 
 ![Imagen de WhatsApp 2024-04-11 a las 15 50 13_c6d485bf](https://github.com/Jhonnatan7br/ML-Project--Humanitarian-supply-chain-network---Indonesian-Red-Cross-Society-/assets/104907786/c72b64c0-dceb-413d-867a-20a2ddcd3df7)
 
