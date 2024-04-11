@@ -1,8 +1,33 @@
 # ML Project  - Pumanitarian supply chain network ( Indonesian Red Cross Society)
 
-This project aims to help the Indonesian Red Cross Society (Palang Merah Indonesia, PMI) to optimize its operations and improve its performance through data analytics and artificial intelligence.  One of the most important tasks of PMI is the distribution of emergency supplies to victims in affected areas during humanitarian crises. PMI operates a humanitarian supply chain network to receive supplies from suppliers  and donors, store them in its warehouses during normal times, and deliver them to victims during crises.
+This project aims to help the Indonesian Red Cross Society (Palang Merah Indonesia, PMI) optimize its operations and improve its performance through data analytics and artificial intelligence.
+
+One of the most important tasks of PMI is the distribution of emergency supplies to victims in affected areas during humanitarian crises. PMI operates a humanitarian supply chain network to receive supplies from suppliers and donors, store them in its warehouses during normal times, and deliver them to victims during crises. PMI's warehouse network is divided into three levels, including 1 regional warehouse, 1 provincial warehouse, and 20 district warehouses.
 
 ### Dataset Overview
+
+![image](https://github.com/Jhonnatan7br/ML-Project--Humanitarian-supply-chain-network---Indonesian-Red-Cross-Society-/assets/104907786/b85b83ed-1f0d-40f9-82e4-c5d408f77744)
+
+>[!IMPORTANT]
+>To operate this humanitarian supply chain network, PMI must manage sourcing, transport, replenishment, and 
+distribution activities. And for each type of activity, PMI has two different policies.
+
+| Activity    | Definition                                                                            | Policy 0                                                      | Policy 1                                                    |
+|-------------|--------------------------------------------------------------------------------------|---------------------------------------------------------------|-------------------------------------------------------------|
+| Sourcing    | Assign a warehouse to meet a particular demand of relief supplies, move relief supplies from other warehouses to the assigned warehouse as needed. | Hierarchical sourcing: Assign the closest warehouse to meet the particular demand. If needed, the relief supplies can be moved only from upstream to downstream (from regional warehouses to provincial warehouses and from provincial warehouses to district warehouses). | Matrix sourcing: Assign the closest warehouse to meet the particular demand. The relief supplies can be moved from any warehouse to the assigned warehouse as needed. |
+| Transport   | Transport relief supplies from warehouses to affected areas and delivering them to victims. | Dedicated delivery: Each transport only have one destination. | Consolidated delivery: Each transport can have multiple destinations. |
+| Replenishment | Procure relief supplies from suppliers to maintain adequate inventory levels in the warehouse network. | Slow replenishment: It takes 15 days to complete the replenishment. The price of the replenishment is cheaper. | Fast replenishment: It takes 3 days to complete the replenishment. The price of the replenishment is more expensive. |
+| Distribution | Decide the order of fulfillment of different demand                                     | First in first out (FIFO): The first received demand is fulfilled first. | Equity: All demands are partially fulfilled by sharing the available relief supplies among the various demands. |
+
+
+PMI has developed a simulation model to simulate its operations and performance under different situations. The simulation is repeated 12,000 times, each corresponding to a specific scenario characterized by the following features:
+
+- The sourcing, transport, replenishment, and distribution policies. (The combination of hierarchical sourcing and consolidated delivery is considered as infeasible.)
+- Total demand: The total demand of the relief supplies to meet (unit: aid kit)
+- Initial inventory: The initial inventory in each regional, provincial, and district warehouse (unit: aid kit)
+
+Given a specific scenario, the simulation can output a curve over time of the percentage of demands fulfilled since the beginning of the humanitarian crisis. According to this output, the experts in PMI defined a performance indicator called readiness to evaluate the performance. The readiness ranges from 0% to 100% The higher the value, the better the performance. If the readiness is 100%, it indicates PMI is 100% ready to respond to the particular humanitarian crisis in the simulated situation.
+PMI now wants to use this simulated dataset (containing 12,000 simulated scenarios) to optimize its operations and performance
 
 | Feature                  | Description                                                                                           |
 |--------------------------|-------------------------------------------------------------------------------------------------------|
