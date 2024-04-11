@@ -1,4 +1,4 @@
-# ML Project  - Pumanitarian supply chain network ( Indonesian Red Cross Society)
+# ML Project  - Humanitarian supply chain network ( Indonesian Red Cross Society)
 
 This project aims to help the Indonesian Red Cross Society (Palang Merah Indonesia, PMI) optimize its operations and improve its performance through data analytics and artificial intelligence.
 
